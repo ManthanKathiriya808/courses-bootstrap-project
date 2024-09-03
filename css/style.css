@@ -21,3 +21,16 @@
 .height{
    
 }
+
+:root{
+    --primary-color:#4255A4;
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+
+.font-sizes{
+    font-size: 2.8 rem;
+}
