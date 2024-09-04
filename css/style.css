@@ -30,11 +30,62 @@
 .primary-color{
     color: var(--primary-color);
 }
+.primary-color-bg{
+    background-color: var(--primary-color);
+}
 .secondary-color{
     color: var(--secondary-color);
+}
+.secondary-color-bg{
+    background-color: var(--secondary-color);
 }
 
 
 .font-sizes{
     font-size: 2.8 rem;
+}
+
+
+.top{
+ margin-top:-150px ;
+    
+}
+
+.a{
+    text-decoration: none;
+}
+
+
+.slide-overlay-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.slide-overlay-container img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.slide-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #4256a4d0;
+    transition: left 0.3s ease;
+    border-radius: 1rem;
+    
+}
+
+.slide-overlay-container:hover .slide-overlay::before {
+    left: 0;
+}
+
+.z-index{
+    z-index: 5;
 }
