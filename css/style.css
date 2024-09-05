@@ -25,10 +25,18 @@
 :root{
     --primary-color:#4255A4;
     --secondary-color:#FF9F67;
+    --third:#485AAD;
 }
 
 .primary-color{
     color: var(--primary-color);
+}
+
+.linear-gradient{
+    background: linear-gradient(#667EEA, #764BA2);
+}
+.third{
+    background-color: var(--third);
 }
 .primary-color-bg{
     background-color: var(--primary-color);
@@ -53,6 +61,15 @@
 
 .a{
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    
+}
+
+.li{
+    list-style: none;
 }
 
 
@@ -114,4 +131,52 @@
 
   .border-none{
     border: none;
+  }
+
+.anim-btn{
+    z-index: 1 !important;
+}
+
+
+.span{
+    z-index: 10;
+    position: relative;
+}
+
+  .anim-btn::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #AE59FF;
+    top: 0;
+    left: 0;
+    transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    z-index: 1;
+    border-radius: 0.50rem;
+   
+  }
+  .anim-btn1::before{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    background-color: #AE59FF;
+    top: 0;
+    left: 0;
+    transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    z-index: 1;
+    border-radius: 0.50rem;
+   
+  }
+
+
+  .anim-btn:hover::before{
+    width: 100%;
+    color: white;
+  }
+
+  .anim-btn1:hover::before{
+    height: 100%;
+    color: white;
   }
