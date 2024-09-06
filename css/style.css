@@ -161,7 +161,7 @@ a:hover{
     position: absolute;
     height: 0%;
     width: 100%;
-    background-color: #AE59FF;
+    background-color: var(--secondary-color);
     top: 0;
     left: 0;
     transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
@@ -179,4 +179,9 @@ a:hover{
   .anim-btn1:hover::before{
     height: 100%;
     color: white;
+  }
+
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    display: none;
   }
