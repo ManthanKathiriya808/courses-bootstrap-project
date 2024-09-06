@@ -12,6 +12,20 @@
     background-size: cover;
     background-position: center;
 }
+.background-img1{
+    background-image: url('../images/hero.png');
+    background-repeat: no-repeat;
+
+    background-position: top;
+    
+    z-index: 100;
+}
+.background-img2{
+    background-image: url('../images/hero.png');
+    background-repeat: no-repeat;
+    background-position:start top ;
+    z-index: 10;
+}
 
 
 .rounded-5{
