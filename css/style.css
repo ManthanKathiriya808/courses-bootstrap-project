@@ -234,3 +234,19 @@ a:hover{
   .form-p{
     font-size: 0.8rem;
   }
+  .form-label1{
+    font-size: 1.2rem;
+  }
+
+  .backdrop{
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+  }
+
+
+  .white-btn{
+    background-color:white;
+    color:black;
+  }
+
+  
