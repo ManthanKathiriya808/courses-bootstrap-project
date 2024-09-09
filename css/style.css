@@ -249,4 +249,11 @@ a:hover{
     color:black;
   }
 
-  
+  .full-z-index{
+    z-index: 9999;
+  }
+
+  .spinner-load{
+    display: flex ;
+    
+  }

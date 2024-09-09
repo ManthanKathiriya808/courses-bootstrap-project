@@ -16,6 +16,14 @@
 
 </head>
 <body>
+
+  <div class=" spinner-load  justify-content-center align-items-center bg-white position-absolute full-z-index border w-100 h-100 ">
+    <div class="spinner-border shadow " style="height: 100px ; width: 100px;" role="status">
+    </div>
+    <img src="images/loder.png" alt="" class="" style="transform: translateX(-65px);">
+  </div>
+
+
     <div class="continer-fluid background-img1 position-fixed w-100 p-0" id="naving">
   <div class="container d-flex flex-column   w-100  justify-content-center  "   >
     <nav class="navbar navbar-expand-lg  mt-4 navbar-dark  py-lg-3 py-md-2 py-sm-3"  >
@@ -359,6 +367,11 @@
 
 
 		
+</script>
+<script>
+  $(window).on("load",function(){
+    $(".spinner-load").fadeOut(2000);
+  })
 </script>
 
 </body>

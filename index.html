@@ -9,6 +9,7 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
@@ -16,7 +17,13 @@
 
 </head>
 <body>
-
+  <div class="">
+  <div class=" spinner-load  justify-content-center align-items-center bg-white position-absolute full-z-index border w-100 h-100 ">
+    <div class="spinner-border shadow  " style="height: 100px ; width: 100px;" role="status">
+    </div>
+    <img src="images/loder.png" alt="" class="" style="transform: translateX(-65px);">
+  </div>
+</div>
   
     <div class="continer-fluid background-img1 position-fixed w-100 p-0" id="naving">
   <div class="container d-flex flex-column   w-100  justify-content-center  "   >
@@ -120,7 +127,7 @@
                   </nav>
 
 
-                  <div class="hero-section text-white py-5 my-lg-5 mb-lg-5 mb-md-5 mt-md-0 mb-sm-5 mb-5 " >
+                  <div class="hero-section text-white py-5 my-lg-5 mb-lg-5 mb-md-5 mt-md-0 mb-sm-5 mb-5 " data-aos="fade-right" data-aos-duration="2000">
                     <div class="row  py-5  ">
                         <div class="col-lg-6  py-5">
                             <div class="hero-text lh-lg  ">
@@ -774,9 +781,17 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" "></script>              
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+      <!-- aos animation -->
+
+  <script>
+    AOS.init();
+  </script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -809,51 +824,7 @@ var swiper = new Swiper(".mySwiper", {
         },
       },
     });
-  //   var swiper = new Swiper(".mySwiper", {
-  //     slidesPerView: 4,
-  //     spaceBetween: 30,
-  //     freeMode: true,
-  //     slidesToShow: 3,
-  // slidesToScroll: 1,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
-  // infinite: true,
-  // speed: 300,
-  // slidesToShow: 4,
-  // slidesToScroll: 4,
-  // responsive: [
-  //   {
-  //     breakpoint: 1024,
-  //     settings: {
-  //       slidesToShow: 3,
-  //       slidesToScroll: 3,
-  //       infinite: true,
-  //       dots: true
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 600,
-  //     settings: {
-  //       slidesToShow: 2,
-  //       slidesToScroll: 2
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 480,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       slidesToScroll: 1
-  //     }
-  //   }
-  //   // You can unslick at a given breakpoint now by adding:
-  //   // settings: "unslick"
-  //   // instead of a settings object
-  // ],
-  //     pagination: {
-  //       el: ".swiper-pagination",
-  //       clickable: true,
-  //     },
-  //   });
+
   var swiper = new Swiper(".mySwiper1", {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -885,6 +856,14 @@ var swiper = new Swiper(".mySwiper", {
 
   </script>
 
+
+      <!-- spinner -->
+
+<script>
+  $(window).on("load",function(){
+    $(".spinner-load").fadeOut(2000);
+  })
+</script>
 
               <!-- nav -->
 

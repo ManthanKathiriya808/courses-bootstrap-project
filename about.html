@@ -67,6 +67,16 @@
   </div>
 
 <header>
+
+  <div class=" spinner-load  justify-content-center align-items-center bg-white position-absolute full-z-index border w-100 h-100 ">
+    <div class="spinner-border " style="height: 100px ; width: 100px;" role="status">
+      <span class=""></span>
+    </div>
+    <img src="images/loder.png" alt="" class="" style="transform: translateX(-65px);">
+  </div>
+
+
+
     <div class="container-fluid border background-img2   height" >
         <div class="container d-flex flex-column h-100  w-100 "  >
                 <nav class="navbar navbar-expand-lg navbar-dark mt-4  pb-lg-5 pb-md-3 pb-sm-0  pb-0 my-3 my-lg-3 my-md-3 mt-sm-3 mb-sm-0 "  >
@@ -737,6 +747,11 @@ var swiper = new Swiper(".mySwiper", {
 
 
 		
+</script>
+<script>
+  $(window).on("load",function(){
+    $(".spinner-load").fadeOut(2000);
+  })
 </script>
 
 </body>
